@@ -1,0 +1,20 @@
+<div class = "card mt-3">
+    <div class = "card-body">
+        <form action="/InvertCaseFirstAdjustStringToPrevious/resposta" method="POST">
+        <label for="sAString">sAString</label>
+        <input type="text" name = "sAString">
+        <br>
+        <button type="submit" class="btn btn-primary mt-2">submeter</button>
+        </form>
+        <form action="/"><button type="submit" class="btn btn-primary mt-2">menu</button></form>
+    </div>
+</div>
+
+{{#each resposta}}
+    <div class = "card mt-3">
+        <div class = "card-body">
+            <h4>Resposta:</h4>
+            {{texto.InvertCaseFirstAdjustStringToPreviousResult}}
+        </div>
+    </div>
+{{/each}}

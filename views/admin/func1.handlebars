@@ -1,0 +1,22 @@
+<div class = "card mt-3">
+    <div class = "card-body">
+        <form action="/TitleCaseWordsWithToken/resposta" method="POST">
+        <label for="sText">sText</label>
+        <input type="text" name = "sText">
+        <label for="sToken">sToken</label>
+        <input type="text" name = "sToken">
+        <br>
+        <button type="submit" class="btn btn-primary mt-2">submeter</button>
+        </form>
+        <form action="/"><button type="submit" class="btn btn-primary mt-2">menu</button></form>
+    </div>
+</div>
+
+{{#each resposta}}
+    <div class = "card mt-3">
+        <div class = "card-body">
+            <h4>Resposta:</h4>
+            {{texto.TitleCaseWordsWithTokenResult}}
+        </div>
+    </div>
+{{/each}}
